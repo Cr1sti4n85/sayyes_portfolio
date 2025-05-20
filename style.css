@@ -25,12 +25,28 @@ html {
   box-sizing: border-box;
   font-family: var(--font);
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
 }
 
 h1 {
@@ -61,6 +77,15 @@ h5 {
 h6 {
   margin: 0;
   font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
 }
 
 /*Components */
