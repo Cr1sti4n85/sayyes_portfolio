@@ -89,9 +89,50 @@ p {
 }
 
 /*Components */
+
 /*Menu */
+
+.menu-btn {
+  background-color: var(--second-color);
+  outline: thin solid var(--first-color);
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-btn svg {
+  fill: var(--first-color);
+}
+
 .menu {
-  display: none;
+  position: fixed;
+  left: 0;
+  bottom: var(--header-height);
+  opacity: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-color);
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.menu a:hover {
+  background-color: var(--first-color);
+  color: var(--white-color);
 }
 
 /*Utilities */
