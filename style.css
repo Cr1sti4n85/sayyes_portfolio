@@ -17,7 +17,7 @@
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Raleway", sans-serif;
-  --max-width: 1300px;
+  --max-width: 1200px;
   --header-height: 4rem;
 }
 /*Reset */
@@ -257,6 +257,11 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: var(--hero-attachment);
+}
+
+.hero-image-content {
+  width: 100%;
+  min-width: 320px;
 }
 
 .hero-image-opacity {
