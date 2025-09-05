@@ -30,7 +30,7 @@
 
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/cp.lecaros@gmail.com",
+        "https://formsubmit.co/ajax/contacto@sayyes.com.mx",
         {
           method: "POST",
           body: new FormData(e.target),
